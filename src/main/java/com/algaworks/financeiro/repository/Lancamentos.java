@@ -22,5 +22,10 @@ public class Lancamentos implements Serializable {
 				Lancamento.class);
 		return query.getResultList();
 	}
+	
+	public void adicionar(Lancamento lancamento){
+		this.manager.persist(lancamento);
+		
+	}
 
 }
